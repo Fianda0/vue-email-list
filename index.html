@@ -11,7 +11,13 @@
 <body>
     <script src="https://unpkg.com/vue@3.4.27/dist/vue.global.js"></script>
     <div id="app">
+        <input type="number" placeholder="inserire numero mail" v-model="numero" @keyup.enter="chiamaMail()">
 
+        <ul>
+            <li v-for="element in lista">
+                {{element}}
+            </li>
+        </ul>
     </div>
     <script src="main.js"></script>
 </body>
